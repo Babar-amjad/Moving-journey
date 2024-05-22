@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+</head>
+<body>
+    <nav
+      class="navbar fixed-top navbar-expand-lg bg-body-white border border-dark-subtle border border-danger"
+      style="background-color: #ffffff;"
+    >
+      <div class="container">
+        <img
+          class="img-fluid nav-contanier padding"
+          src="https://mymovingjourney.com/assets/img/MMJ-Logo-Remake-04.png"
+          alt="Logo"
+          width="80"
+          height="80"
+          class="d-inline-block align-text-top"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" style="color: black;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-lg-0 ">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                style="color: #1f3468"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown" onmouseleave="closeDropdown()">
+              <a
+                  class="nav-link active "
+                  style="color: #1f3468;text-wrap: nowrap;"
+                  href="Moversusa.html"
+                 
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  onmouseover="openDropdown()"
+              >
+                  Movers in USA
+              </a>
+              <ul class="dropdown-menu" style="color: #1f3468">
+                  <li><a class="dropdown-item" href="Moversroute.html">Movers by Route</a></li>
+                  <li><a class="dropdown-item" href="LocalMover.html">Local Movers</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Long Distance Movers</a></li>
+              </ul>
+          </li>
+          
+          
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./Blogs.html"
+                style="color: #1f3468;"
+                >Blogs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+               href="./Quote.html"
+                class="nav-link active"
+                aria-disabled="true"
+                style="
+                  color: #1f3468;
+                  text-wrap: nowrap;
+                "
+                >Get Quote</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+              href="./About.html"
+                class="nav-link active"
+                style="color: #1f3468; text-wrap: nowrap; padding: 10xp"
+                aria-disabled="true"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./Login.html"
+                class="nav-link active"
+                style="color: #1f3468"
+                aria-disabled="true"
+                >Login</a
+              >
+            </li>
+            <a href="./Button.html">
+              <button href="./Button.html" class="rounded" id="register-btn" type="button">
+                <span style="font-weight: 500;">Add Business</span>
+              </button>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+                 
+    <!-- Local Movers -->
+
+           <div class="container-fluid bg-local">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 mt-5 main-local">
+                  <h1 class="d-flex justify-content-center">Local Movers</h1>
+                  <div class=""> 
+                   <div class="spanish d-flex justify-content-center">
+                    <i class="bi bi-house-fill home-local"><span class="fs-5 span-local">Home ></span> <span class="fs-5"> Local Movers</span></i>
+                   </div>
+                  </div class="d-flex justify-content-center" >
+                  <p >Moving made easy with our local movers! Our team provides efficient, reliable service to ensure a stress-free relocation.</p>
+                  <div class="row">
+                    <div class="col-12 justify-content-evenly mt-4 mx-auto">
+                      <div class="row move-row justify-content-evenly" style="background-color: #ffffff;">
+                        <div class="col-3 move">
+                          <h4>Free Moving Quote</h4>
+                          <p class="text-dark">Fields marked with an * </p>
+                        </div>
+                        <div class="col-3 move">
+                          <h6>City you are moving from</h6>
+                          <div class="input-wrapper">
+                            <i class="fa-regular fa-building"></i>
+                            <input type="text" placeholder="Zip From" />
+                          </div>
+                        </div>
+                        <div class="col-3 move">
+                          <h6>City you are moving to</h6>
+                          <div class="input-wrapper">
+                            <i class="fa-regular fa-building"></i>
+                            <input type="text" placeholder="Zip To" />
+                          </div>
+                        </div>
+                        <div class="col-3 move">
+                          <p>
+                            <a href="" style="color: black; font-weight: 700"
+                              >save upto 25% off</a
+                            >
+                          </p>
+                          <button class="next-btn">Next</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+           <!-- cards local -->
+
+           <div class="container">
+            <div class="row row-part">
+              <div class="col-lg-3 col-md-5 order-lg-1 order-xl-1 order-2">
+                <h4 style="color: #1f3468; margin-top: 15px;">Search For Movers</h4>
+                <div class="input-container">
+                  <i class="fas fa-search "></i>
+                  <!-- Font Awesome search icon -->
+                  <input
+                    type="text"
+                    placeholder=" for a company"
+                    class="rounded"
+                  />
+                </div>
+                <h4 class=" moves mt-4" style="color: #1f3468">Top Moving States</h4>
+                <p class="hover-underline border-bottom d-inline-block">Movers In Florida (86)</p></br>
+                <p class="hover-underline border-bottom d-inline-block">Movers In New Jersey (11)</p></br>
+                <p class="hover-underline border-bottom d-inline-block">Movers In California (16)</p></br>
+                <p class="hover-underline border-bottom d-inline-block">Movers In Texas (9)</p></br>
+                <p class="hover-underline border-bottom d-inline-block">Movers In Illinois (6)</p></br>
+                <p class="hover-underline border-bottom d-inline-block">Movers In Washington (4)</p></br>
+                <p class="hover-underline border-bottom d-inline-block">Movers In Tennessee (4)</p></br>
+                <p class="hover-underline border-bottom d-inline-block">Movers In Virginia (4)</p></br>
+                <p class="hover-underline border-bottom d-inline-block">Movers In Maryland (3)</p></br>
+                <p class="hover-underline border-bottom d-inline-block">Movers In Virginia (4)</p></br>
+                <p class="hover-underline border-bottom d-inline-block">Movers In Maryland (3)</p></br>
+              </div>
+    
+              <div class="col-lg-9 col-md-7 order-lg-2 order-xl-2 order-1 ">
+                <h1 class="hero-h1" style="color: #1f3468; margin-bottom: 20px;">Total Movers : 39</h1>
+    
+                <div class="row rounded border border-3 row-right d-flex-md flex-column-md">
+                  <div class="col-lg-9 w-95 order-lg-1 order-xl-1 order-2">
+                      <div class="d-flex justify-content-start text-align-center">
+                          <div class="america" style="color: #1f3468; font-weight: 600;">
+                            Interstate Moving | Relocation | Logistics Reviews
+                          </div>
+                      </div>
+                      <span>
+                          <i class="bi bi-star-fill" style="color: #fb8500; font-size: x-large"></i>
+                      </span>
+                      <span>
+                          <i class="bi bi-star-fill" style="color: #fb8500; font-size: x-large"></i>
+                      </span>
+                      <span>
+                          <i class="bi bi-star-fill" style="color: #fb8500; font-size: x-large"></i>
+                      </span>
+                      <span>
+                          <i class="bi bi-star-fill" style="color: #fb8500; font-size: x-large"></i>
+                      </span>
+                      <span>
+                          <i class="bi bi-star-fill" style="color: #fb8500; font-size: x-large"></i>
+                      </span>
+                      <span>(5)</span>
+                      <h5 style="color: #1f3468">38 Review</h5>
+                      <h6>Last Review By Jamise Walliam</h6>
+                      <h4>Problem Solver</h4>
+                  </div>
+                  <div class="col-lg-3 card-info order-lg-2 order-xl-2 order-1">
+                      <div style="font-size: medium; margin-top: 11px;">
+                          <span style="color: black; font-weight: 700;">US DOT</span>: 2365
+                      </div>
+                      <div>
+                          <img class="pe-3 logo w-25-md" src="https://mymovingjourney.com/companies/image/interstate-moving-relocation-logistics.jpg" alt="" srcset="">
+                      </div>
+                  </div>
+                  <div class="row order-3">
+                    <div class="expandable-paragraph">
+                      <p>
+                        I can't believe how smoothly my move went with this company. From the moment they
+                        <span id="extra-text" style="display: none;" data-extra-text>
+                          cleaned the truck to the final placement of my furniture in my new place, everything was perfect.
+                        </span>
+                        <span class="see-more" onclick="toggleExpand()" data-see-more>..See More</span>
+                      </p>
+                    </div>   
+                  </div>
+                  <div class="row d-flex justify-content-center text-align-center order-4">
+                      <div class="col-lg-6">
+                          <h5 style="color: red;">Move Cost: $4734</h5>
+                      </div>
+                      <div class="col-lg-6">
+                          <p style="color: #1f3468;">Based in Boca Raton, Florida</p>
+                      </div>
+                  </div>
+                  </div>
+                 <div class="row pagination rounded border border-3 row-right my-4">
+                  <div class="col-lg-9 w-95 order-lg-1 order-xl-1 order-2">
+                    <div class="d-flex justify-content-start text-align:center">
+                      <div
+                      class="america"
+                        style="color: #1f3468; font-weight: 600"
+                      >
+                      Chicago Packers and Movers Reviews
+                      </div>
+                    </div>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-half"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>(4.5)</span>
+                    <h5 style="color: #1f3468">38 Review</h5>
+                    <h6>Last Review BY Jamise Walliam</h6>
+                    <h4>Your the Real best one</h4>
+                  </div>
+                  <div class="col-lg-3 card-info order-lg-2 order-xl-2 order-1">
+                    <div class="" style="font-size: medium; margin-top: 11px">
+                      <span style="color: black; font-weight: 700">US DOT</span>:
+                      2365
+                    </div>
+                    <div class="d-flex justify-content-center text-align-center">
+                      <img
+                        class="pe-3 logo"
+                        src="https://mymovingjourney.com/companies/image/chicago-packers-and-movers.jpeg"
+                        alt=""
+                        srcset=""
+                       
+                      />
+                    </div>
+                  </div>
+                  <div class="row order-lg-3 order-3">
+                    <div id="expandable-paragraph">
+                      <p>
+                        I can't believe how smoothly my move went with this company. From the moment they
+                        <span id="extra-text" style="display: none;" data-extra-text>
+                          cleaned the truck to the final placement of my furniture in my new place, everything was perfect.
+                        </span>
+                        <span class="see-more" onclick="toggleExpand()" data-see-more>.See More</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row d-flex justify-content-center text-align-center order-3">
+                    <div class="col-lg-6">
+                      <h5 style="color: red">Move Cost : $4734</h5>
+                    </div>
+                    <div class="col-lg-6">
+                      <p style="color: #1f3468">Based in Boca Reton ,Florida</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row rounded border border-3 row-right my-4">
+                  <div class="col-lg-9 w-95 order-lg-1 order-xl-1 order-2">
+                    <div class="d-flex justify-content-start text-align:center">
+                      <div
+                      class="america"
+                        style="color: #1f3468;  font-weight: 600"
+                      >
+                      STI Moving & Storage. Reviews
+                      </div>
+                    </div>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+    
+                    <span>(4)</span>
+                    <h5 style="color: #1f3468">28 Review</h5>
+                    <h6>Last Review BY Jamise Walliam</h6>
+                    <h4>Exellent Services</h4>
+                  </div>
+                  <div class="col-lg-3 card-info order-lg-2 order-xl-2 order-1">
+                    <div class="" style="font-size: medium; margin-top: 11px">
+                      <span style="color: black; font-weight: 700">US DOT</span>:
+                      2365
+                    </div>
+                    <div class="d-flex justify-content-center text-align-center">
+                      <img
+                        class="pe-3 logo mt-1"
+                        src="https://mymovingjourney.com/companies/image/bluboxit.jpg"
+                        alt=""
+                      
+                      />
+                    </div>
+                  </div>
+                  <div class="row order-3">
+                    <div id="expandable-paragraph">
+                      <p>
+                        Reasonable price for an excellent service. I am satisfied
+                        with their work.
+                        <span id="extra-text" style="display: none;" data-extra-text>
+                          They do everything carefully and on time. I recommend
+                          their service to anyone..
+                        </span>
+                        <span class="see-more" onclick="toggleExpand()" data-see-more>.See More</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row d-flex justify-content-center text-align-center order-4">
+                    <div class="col-lg-6">
+                      <h5 style="color: red">Move Cost : $4734</h5>
+                    </div>
+                    <div class="col-lg-6">
+                      <p style="color: #1f3468">Based in Boca Reton ,Florida</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row rounded border border-3 row-right my-4">
+                  <div class="col-lg-9 w-95 order-lg-1 order-xl-1 order-2">
+                    <div class="d-flex justify-content-start text-align:center">
+                      <div
+                      class="america"
+                        style="color: #1f3468; font-size: 25px; font-weight: 600"
+                      >
+                      Fastbreak Movers Reviews
+                      </div>
+                    </div>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-half"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+    
+                    <span>(3)</span>
+                    <h5 style="color: #1f3468">38 Review</h5>
+                    <h6>Last Review BY Jamise Walliam</h6>
+                    <h4>Problem Solver</h4>
+                  </div>
+                  <div class="col-lg-3 card-info order-lg-2 order-xl-2 order-1">
+                    <div class="" style="font-size: medium; margin-top: 11px">
+                      <span style="color: black; font-weight: 700">US DOT</span>:
+                      2365
+                    </div>
+                    <div class="d-flex logo  justify-content-center text-align-center">
+                      <img
+                        class="pe-3"
+                        src="https://mymovingjourney.com/companies/image/fastbreak-movers.jpg"
+                        alt=""
+                        
+                      />
+                    </div>
+                  </div>
+                  <div class="row order-3">
+                    <div id="expandable-paragraph">
+                      <p>
+                        Reasonable price for an excellent service. I am satisfied
+                        with their work.
+                        <span id="extra-text" style="display: none;" data-extra-text>
+                          They do everything carefully and on time. I recommend
+                          their service to anyone..
+                        </span>
+                        <span class="see-more" onclick="toggleExpand()" data-see-more>.See More</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row d-flex justify-content-center text-align-center order-4">
+                    <div class="col-lg-6">
+                      <h5 style="color: red">Move Cost : $4734</h5>
+                    </div>
+                    <div class="col-lg-6">
+                      <p style="color: #1f3468">Based in Boca Reton ,Florida</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row rounded border border-3 row-right my-4">
+                  <div class="col-lg-9 w-95 order-lg-1 order-xl-1 order-2">
+                    <div class="d-flex justify-content-start text-align:center">
+                      <div
+                      class="america"
+                        style="color: #1f3468; font-size: 25px; font-weight: 600"
+                      >
+                      Eagle Van Lines Moving & Storage Reviews
+                      </div>
+                    </div>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>(5)</span>
+                    <h5 style="color: #1f3468">38 Review</h5>
+                    <h6>Last Review BY Jamise Walliam</h6>
+                    <h4>Problem Solver</h4>
+                  </div>
+                  <div class="col-lg-3 card-info order-lg-2 order-xl-2 order-1">
+                    <div class="" style="font-size: medium; margin-top: 11px">
+                      <span style="color: black; font-weight: 700">US DOT</span>:
+                      2365
+                    </div>
+                    <div class="d-flex justify-content-center text-align-center">
+                      <img
+                        class="pe-3 logo"
+                        src="https://mymovingjourney.com/companies/image/eagle-van-lines-moving-storage.jpg"
+                        alt=""
+                        srcset=""
+                       
+                      />
+                    </div>
+                  </div>
+                  <div class="row order-3">
+                    <div id="expandable-paragraph">
+                      <p>
+                        Reasonable price for an excellent service. I am satisfied
+                        with their work.
+                        <span id="extra-text" style="display: none;" data-extra-text>
+                          They do everything carefully and on time. I recommend
+                          their service to anyone..
+                        </span>
+                        <span class="see-more" onclick="toggleExpand()" data-see-more>.See More</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row d-flex justify-content-center text-align-center order-4">
+                    <div class="col-lg-6">
+                      <h5 style="color: red">Move Cost : $4734</h5>
+                    </div>
+                    <div class="col-lg-6">
+                      <p style="color: #1f3468">Based in Boca Reton ,Florida</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row rounded border border-3 row-right my-4">
+                  <div class="col-lg-9 w-95 order-lg-1 order-xl-1 order-2">
+                    <div class="d-flex logo  justify-content-start text-align:center">
+                      <div
+                      class="america"
+                        style="color: #1f3468; font-size: 25px; font-weight: 600"
+                      >
+                      US Pro Logistics Reviews
+                      </div>
+                    </div>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>(5)</span>
+                    <h5 style="color: #1f3468">38 Review</h5>
+                    <h6>Last Review BY Jamise Walliam</h6>
+                    <h4>Problem Solver</h4>
+                  </div>
+                  <div class="col-lg-3 card-info order-lg-2 order-xl-2 order-1">
+                    <div class="" style="font-size: medium; margin-top: 11px">
+                      <span style="color: black; font-weight: 700">US DOT</span>:
+                      2365
+                    </div>
+                    <div class="d-flex justify-content-center text-align-center">
+                      <img
+                        class="pe-3 logo  my-1"
+                        src="https://mymovingjourney.com/companies/image/us-pro-logistics.jpg"
+                        alt=""
+                        srcset=""
+                      
+                        
+                      />
+                    </div>
+                  </div>
+                  <div class="row order-3">
+                    <div id="expandable-paragraph">
+                      <p>
+                        Reasonable price for an excellent service. I am satisfied
+                        with their work.
+                        <span id="extra-text" style="display: none;" data-extra-text>
+                          They do everything carefully and on time. I recommend
+                          their service to anyone..
+                        </span>
+                        <span class="see-more" onclick="toggleExpand()" data-see-more>.See More</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row d-flex justify-content-center text-align-center order-3">
+                    <div class="col-lg-6">
+                      <h5 style="color: red">Move Cost : $4734</h5>
+                    </div>
+                    <div class="col-lg-6">
+                      <p style="color: #1f3468">Based in Boca Reton ,Florida</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row rounded border border-3 row-right my-4">
+                  <div class="col-lg-9 w-95 order-lg-1 order-xl-1 order-2">
+                    <div class="d-flex justify-content-start text-align:center">
+                      <div
+                      class="america"
+                        style="color: #1f3468; font-size: 25px; font-weight: 600"
+                      >
+                        United American move and Storage
+                      </div>
+                    </div>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>(5)</span>
+                    <h5 style="color: #1f3468">38 Review</h5>
+                    <h6>Last Review BY Jamise Walliam</h6>
+                    <h4>Problem Solver</h4>
+                  </div>
+                  <div class="col-lg-3 card-info order-lg-2 order-xl-2 order-1">
+                    <div class="" style="font-size: medium; margin-top: 11px">
+                      <span style="color: black; font-weight: 700">US DOT</span>:
+                      2365
+                    </div>
+                    <div class="d-flex justify-content-center text-align-center">
+                      <img
+                        class="pe-3 logo"
+                        src="https://mymovingjourney.com/companies/image/three-movers-oakland.jpg"
+                        alt=""
+                       
+                      />
+                    </div>
+                  </div>
+                  <div class="row order-3">
+                    <div id="expandable-paragraph">
+                      <p>
+                        Reasonable price for an excellent service. I am satisfied
+                        with their work.
+                        <span id="extra-text" style="display: none;" data-extra-text>
+                          They do everything carefully and on time. I recommend
+                          their service to anyone..
+                        </span>
+                        <span class="see-more" onclick="toggleExpand()" data-see-more>.See More</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row d-flex justify-content-center text-align-center order-4">
+                    <div class="col-lg-6">
+                      <h5 style="color: red">Move Cost : $4734</h5>
+                    </div>
+                    <div class="col-lg-6">
+                      <p style="color: #1f3468">Based in Boca Reton ,Florida</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row rounded border border-3 row-right my-4">
+                  <div class="col-lg-9 w-95 order-lg-1 order-xl-1 order-2">
+                    <div class="d-flex justify-content-start text-align:center">
+                      <div
+                      class="america"
+                        style="color: #1f3468; font-size: 25px; font-weight: 600"
+                      >
+                      Royal Moving & Storage Hollywood Reviews
+                      </div>
+                    </div>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>(5)</span>
+                    <h5 style="color: #1f3468">38 Review</h5>
+                    <h6>Last Review BY Jamise Walliam</h6>
+                    <h4>Problem Solver</h4>
+                  </div>
+                  <div class="col-lg-3 card-info order-lg-2 order-xl-2 order-1">
+                    <div class="" style="font-size: medium; margin-top: 11px">
+                      <span style="color: black; font-weight: 700">US DOT</span>:
+                      2365
+                    </div>
+                    <div class="d-flex justify-content-center text-align-center">
+                      <img
+                        class="pe-3 logo"
+                        src="https://mymovingjourney.com/companies/image/royal-moving-storage-hollywood.jpg"
+                        alt=""
+                       
+                      />
+                    </div>
+                  </div>
+                  <div class="row order-3">
+                    <div id="expandable-paragraph">
+                      <p>
+                        Reasonable price for an excellent service. I am satisfied
+                        with their work.
+                        <span id="extra-text" style="display: none;" data-extra-text>
+                          They do everything carefully and on time. I recommend
+                          their service to anyone..
+                        </span>
+                        <span class="see-more" onclick="toggleExpand()" data-see-more>.See More</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row d-flex justify-content-center text-align-center order-4">
+                    <div class="col-lg-6">
+                      <h5 style="color: red">Move Cost : $4734</h5>
+                    </div>
+                    <div class="col-lg-6">
+                      <p style="color: #1f3468">Based in Boca Reton ,Florida</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row rounded border border-3 row-right my-4">
+                  <div class="col-lg-9 w-95 order-lg-1 order-xl-1 order-2">
+                    <div class="d-flex justify-content-start text-align:center">
+                      <div
+                      class="america"
+                        style="color: #1f3468; font-size: 25px; font-weight: 600"
+                      >
+                      Safe Ship Moving Services Reviews
+                      </div>
+                    </div>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>(5)</span>
+                    <h5 style="color: #1f3468">38 Review</h5>
+                    <h6>Last Review BY Jamise Walliam</h6>
+                    <h4>Problem Solver</h4>
+                  </div>
+                  <div class="col-lg-3 card-info order-lg-2 order-xl-2 order-1">
+                    <div class="" style="font-size: medium; margin-top: 11px">
+                      <span style="color: black; font-weight: 700">US DOT</span>:
+                      2365
+                    </div>
+                    <div class="d-flex justify-content-center text-align-center">
+                      <img
+                        class="pe-3 logo"
+                        src="https://mymovingjourney.com/companies/image/safe-ship-moving-services.jpg"
+                        alt=""
+                       
+                      />
+                    </div>
+                  </div>
+                  <div class="row order-3">
+                    <div id="expandable-paragraph">
+                      <p>
+                        Reasonable price for an excellent service. I am satisfied
+                        with their work.
+                        <span id="extra-text" style="display: none;" data-extra-text>
+                          They do everything carefully and on time. I recommend
+                          their service to anyone..
+                        </span>
+                        <span class="see-more" onclick="toggleExpand()" data-see-more>.See More</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row d-flex justify-content-center text-align-center order-4">
+                    <div class="col-lg-6">
+                      <h5 style="color: red">Move Cost : $4734</h5>
+                    </div>
+                    <div class="col-lg-6">
+                      <p style="color: #1f3468">Based in Boca Reton ,Florida</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row rounded border border-3 row-right my-4">
+                  <div class="col-lg-9 w-95 order-lg-1 order-xl-1 order-2">
+                    <div class="d-flex justify-content-start text-align:center">
+                      <div
+                      class="america"
+                        style="color: #1f3468; font-size: 25px; font-weight: 600"
+                      >
+                      North American Moving Experts LLC Reviews
+                      </div>
+                    </div>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>(5)</span>
+                    <h5 style="color: #1f3468">38 Review</h5>
+                    <h6>Last Review BY Jamise Walliam</h6>
+                    <h4>Problem Solver</h4>
+                  </div>
+                  <div class="col-lg-3 card-info order-lg-2 order-xl-2 order-1">
+                    <div class="" style="font-size: medium; margin-top: 11px">
+                      <span style="color: black; font-weight: 700">US DOT</span>:
+                      2365
+                    </div>
+                    <div class="d-flex justify-content-center text-align-center">
+                      <img
+                        class="pe-3 logo"
+                        src="https://mymovingjourney.com/companies/image/north-american-moving-experts-llc.webp"
+                        alt=""
+                       
+                      />
+                    </div>
+                  </div>
+                  <div class="row order-3">
+                    <div id="expandable-paragraph">
+                      <p>
+                        Reasonable price for an excellent service. I am satisfied
+                        with their work.
+                        <span id="extra-text" style="display: none;" data-extra-text>
+                          They do everything carefully and on time. I recommend
+                          their service to anyone..
+                        </span>
+                        <span class="see-more" onclick="toggleExpand()" data-see-more>.See More</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row d-flex justify-content-center text-align-center order-4">
+                    <div class="col-lg-6">
+                      <h5 style="color: red">Move Cost : $4734</h5>
+                    </div>
+                    <div class="col-lg-6">
+                      <p style="color: #1f3468">Based in Boca Reton ,Florida</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row rounded border border-3 row-right my-4">
+                  <div class="col-lg-9 w-95 order-lg-1 order-xl-1 order-2">
+                    <div class="d-flex justify-content-start text-align:center">
+                      <div
+                      class="america"
+                        style="color: #1f3468; font-size: 25px; font-weight: 600"
+                      >
+                      Kinetic Motion Moving LLC Reviews
+                      </div>
+                    </div>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>(5)</span>
+                    <h5 style="color: #1f3468">38 Review</h5>
+                    <h6>Last Review BY Jamise Walliam</h6>
+                    <h4>Problem Solver</h4>
+                  </div>
+                  <div class="col-lg-3 card-info order-lg-2 order-xl-2 order-1">
+                    <div class="" style="font-size: medium; margin-top: 11px">
+                      <span style="color: black; font-weight: 700">US DOT</span>:
+                      2365
+                    </div>
+                    <div class="d-flex justify-content-center text-align-center">
+                      <img
+                        class="pe-3 logo"
+                        src="https://mymovingjourney.com/companies/image/kinetic-motion-moving-llc.webp"
+                        alt=""
+                       
+                      />
+                    </div>
+                  </div>
+                  <div class="row order-3">
+                    <div id="expandable-paragraph">
+                      <p>
+                        Reasonable price for an excellent service. I am satisfied
+                        with their work.
+                        <span id="extra-text" style="display: none;" data-extra-text>
+                          They do everything carefully and on time. I recommend
+                          their service to anyone..
+                        </span>
+                        <span class="see-more" onclick="toggleExpand()" data-see-more>.See More</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row d-flex justify-content-center text-align-center order-4">
+                    <div class="col-lg-6">
+                      <h5 style="color: red">Move Cost : $4734</h5>
+                    </div>
+                    <div class="col-lg-6">
+                      <p style="color: #1f3468">Based in Boca Reton ,Florida</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row rounded border border-3 row-right my-4">
+                  <div class="col-lg-9 w-95 order-lg-1 order-xl-1 order-2">
+                    <div class="d-flex justify-content-start text-align:center">
+                      <div
+                      class="america"
+                        style="color: #1f3468; font-size: 25px; font-weight: 600"
+                      >
+                      A Plus Moving and Storage Reviews
+                      </div>
+                    </div>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>(5)</span>
+                    <h5 style="color: #1f3468">38 Review</h5>
+                    <h6>Last Review BY Jamise Walliam</h6>
+                    <h4>Problem Solver</h4>
+                  </div>
+                  <div class="col-lg-3 card-info order-lg-2 order-xl-2 order-1">
+                    <div class="" style="font-size: medium; margin-top: 11px">
+                      <span style="color: black; font-weight: 700">US DOT</span>:
+                      2365
+                    </div>
+                    <div class="d-flex justify-content-center text-align-center">
+                      <img
+                        class="pe-3 logo"
+                        src="https://mymovingjourney.com/companies/image/a-plus-moving-and-storage.webp"
+                        alt=""
+                       
+                      />
+                    </div>
+                  </div>
+                  <div class="row order-3">
+                    <div id="expandable-paragraph">
+                      <p>
+                        Reasonable price for an excellent service. I am satisfied
+                        with their work.
+                        <span id="extra-text" style="display: none;" data-extra-text>
+                          They do everything carefully and on time. I recommend
+                          their service to anyone..
+                        </span>
+                        <span class="see-more" onclick="toggleExpand()" data-see-more>.See More</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row d-flex justify-content-center text-align-center order-4">
+                    <div class="col-lg-6">
+                      <h5 style="color: red">Move Cost : $4734</h5>
+                    </div>
+                    <div class="col-lg-6">
+                      <p style="color: #1f3468">Based in Boca Reton ,Florida</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row rounded border border-3 row-right my-4">
+                  <div class="col-lg-9 w-95 order-lg-1 order-xl-1 order-2">
+                    <div class="d-flex justify-content-start text-align:center">
+                      <div
+                      class="america"
+                        style="color: #1f3468; font-size: 25px; font-weight: 600"
+                      >
+                        United American move and Storage
+                      </div>
+                    </div>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>(5)</span>
+                    <h5 style="color: #1f3468">38 Review</h5>
+                    <h6>Last Review BY Jamise Walliam</h6>
+                    <h4>Problem Solver</h4>
+                  </div>
+                  <div class="col-lg-3 card-info order-lg-2 order-xl-2 order-1">
+                    <div class="" style="font-size: medium; margin-top: 11px">
+                      <span style="color: black; font-weight: 700">US DOT</span>:
+                      2365
+                    </div>
+                    <div class="d-flex justify-content-center text-align-center">
+                      <img
+                        class="pe-3 logo"
+                        src="https://mymovingjourney.com/companies/image/three-movers-oakland.jpg"
+                        alt=""
+                       
+                      />
+                    </div>
+                  </div>
+                  <div class="row order-3">
+                    <div id="expandable-paragraph">
+                      <p>
+                        Reasonable price for an excellent service. I am satisfied
+                        with their work.
+                        <span id="extra-text" style="display: none;" data-extra-text>
+                          They do everything carefully and on time. I recommend
+                          their service to anyone..
+                        </span>
+                        <span class="see-more" onclick="toggleExpand()" data-see-more>.See More</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row d-flex justify-content-center text-align-center order-4">
+                    <div class="col-lg-6">
+                      <h5 style="color: red">Move Cost : $4734</h5>
+                    </div>
+                    <div class="col-lg-6">
+                      <p style="color: #1f3468">Based in Boca Reton ,Florida</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row rounded border border-3 row-right my-4">
+                  <div class="col-lg-9 w-95 order-lg-1 order-xl-1 order-2">
+                    <div class="d-flex justify-content-start text-align:center">
+                      <div
+                      class="america"
+                        style="color: #1f3468; font-size: 25px; font-weight: 600"
+                      >
+                      Prime Line VanLines LLC Reviews
+                      </div>
+                    </div>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>(5)</span>
+                    <h5 style="color: #1f3468">38 Review</h5>
+                    <h6>Last Review BY Jamise Walliam</h6>
+                    <h4>Problem Solver</h4>
+                  </div>
+                  <div class="col-lg-3 card-info order-lg-2 order-xl-2 order-1">
+                    <div class="" style="font-size: medium; margin-top: 11px">
+                      <span style="color: black; font-weight: 700">US DOT</span>:
+                      2365
+                    </div>
+                    <div class="d-flex justify-content-center text-align-center">
+                      <img
+                        class="pe-3 logo"
+                        src="https://mymovingjourney.com/companies/image/prime-line-vanlines-llc.jpg"
+                        alt=""
+                       
+                      />
+                    </div>
+                  </div>
+                  <div class="row order-3">
+                    <div id="expandable-paragraph">
+                      <p>
+                        Reasonable price for an excellent service. I am satisfied
+                        with their work.
+                        <span id="extra-text" style="display: none;" data-extra-text>
+                          They do everything carefully and on time. I recommend
+                          their service to anyone..
+                        </span>
+                        <span class="see-more" onclick="toggleExpand()" data-see-more>.See More</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row d-flex justify-content-center text-align-center order-4">
+                    <div class="col-lg-6">
+                      <h5 style="color: red">Move Cost : $4734</h5>
+                    </div>
+                    <div class="col-lg-6">
+                      <p style="color: #1f3468">Based in Boca Reton ,Florida</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row  rounded border border-3 row-right my-4">
+                  <div class="col-lg-9 w-95 order-lg-1 order-xl-1 order-2">
+                    <div class="d-flex justify-content-start text-align:center">
+                      <div
+                      class="america"
+                        style="color: #1f3468; font-size: 25px; font-weight: 600"
+                      >
+                      Alma Moving Reviews
+                      </div>
+                    </div>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>(5)</span>
+                    <h5 style="color: #1f3468">38 Review</h5>
+                    <h6>Last Review BY Jamise Walliam</h6>
+                    <h4>Problem Solver</h4>
+                  </div>
+                  <div class="col-lg-3 card-info order-lg-2 order-xl-2 order-1">
+                    <div class="" style="font-size: medium; margin-top: 11px">
+                      <span style="color: black; font-weight: 700">US DOT</span>:
+                      2365
+                    </div>
+                    <div class="d-flex justify-content-center text-align-center">
+                      <img
+                        class="pe-3 logo"
+                        src="https://mymovingjourney.com/companies/image/alma-moving.jpg"
+                        alt=""
+                       
+                      />
+                    </div>
+                  </div>
+                  <div class="row order-3">
+                    <div id="expandable-paragraph">
+                      <p>
+                        Reasonable price for an excellent service. I am satisfied
+                        with their work.
+                        <span id="extra-text" style="display: none;" data-extra-text>
+                          They do everything carefully and on time. I recommend
+                          their service to anyone..
+                        </span>
+                        <span class="see-more" onclick="toggleExpand()" data-see-more>.See More</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row d-flex justify-content-center text-align-center order-4">
+                    <div class="col-lg-6">
+                      <h5 style="color: red">Move Cost : $4734</h5>
+                    </div>
+                    <div class="col-lg-6">
+                      <p style="color: #1f3468">Based in Boca Reton ,Florida</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row rounded border border-3 row-right my-4">
+                  <div class="col-lg-9 w-95 order-lg-1 order-xl-1 order-2">
+                    <div class="d-flex justify-content-start text-align:center">
+                      <div
+                      class="america"
+                        style="color: #1f3468; font-size: 25px; font-weight: 600"
+                      >
+                      Amex Moving & Storage LLC Reviews
+                      </div>
+                    </div>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>
+                      <i
+                        class="bi bi-star-fill"
+                        style="color: #fb8500; font-size: x-large"
+                      ></i>
+                    </span>
+                    <span>(5)</span>
+                    <h5 style="color: #1f3468">38 Review</h5>
+                    <h6>Last Review BY Jamise Walliam</h6>
+                    <h4>Problem Solver</h4>
+                  </div>
+                  <div class="col-lg-3 card-info order-lg-2 order-xl-2 order-1">
+                    <div class="" style="font-size: medium; margin-top: 11px">
+                      <span style="color: black; font-weight: 700">US DOT</span>:
+                      2365
+                    </div>
+                    <div class="d-flex justify-content-center text-align-center">
+                      <img
+                        class="pe-3 logo"
+                        src="https://mymovingjourney.com/companies/image/amex-moving-storage-llc.webp"
+                        alt=""
+                       
+                      />
+                    </div>
+                  </div>
+                  <div class="row order-3">
+                    <div id="expandable-paragraph">
+                      <p>
+                        Reasonable price for an excellent service. I am satisfied
+                        with their work.
+                        <span id="extra-text" style="display: none;" data-extra-text>
+                          They do everything carefully and on time. I recommend
+                          their service to anyone..
+                        </span>
+                        <span class="see-more" onclick="toggleExpand()" data-see-more>.See More</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row d-flex justify-content-center text-align-center order-4">
+                    <div class="col-lg-6">
+                      <h5 style="color: red">Move Cost : $4734</h5>
+                    </div>
+                    <div class="col-lg-6">
+                      <p style="color: #1f3468">Based in Boca Reton ,Florida</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                         
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="pagination mb-4">
+                  <a style="background-color: rgb(31 52 104); color: #ffffff;" href="#"><i class="fa fa-chevron-left" ></i></a>
+                  <a class="" style="background-color: rgb(31 52 104); color: #ffffff;" href="#">1</a>
+                  <a  href="#">2</a>
+                  <a href="#">3</a>
+                  <a href="#">4</a>
+                  <a href="#">5</a>
+                  <a href="#"><i class="bi bi-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="container">
+            <div class="row head-local">
+              <div class="col-lg-10 col-md-10 col-sm-10">
+                <h1>Criteria of a Local Move</h1>
+                <p>Planning a local move entails specific criteria that distinguish it from long-distance relocations. Typically confined within a short distance, local moves are characterized by their manageable duration and compliance with local regulations.
+                 A relocation is considered a local if:</p>
+                 <div>
+                  <li>A move is within a short radius, often within the same city or metropolitan area.</li>
+                 </div>
+                 <div>
+                  <li>It can be completed in a single day or over a short period without the need for an overnight stay.</li>
+                 </div>
+                 <div>
+                  <li>It has simpler rulers compared to long-distance or interstate moves.</li>
+                 </div>
+              </div>
+              <div class="col-lg-10 col-md-10 col-sm-10">
+                <h1>Characteristics of a Top Local Moving Company</h1>
+                <p>Choosing the right local moving company is pivotal for a smooth and reliable relocation experience. Understanding the key characteristics of a top-rated local mover ensures a smooth transition to your new home.</p>
+                <div>
+                  <li><span>Reliability:</span> A dependable local mover delivers on-time services, ensuring your move stays on schedule.</li>
+                 </div>
+                 <div>
+                  <li><span>Professionalism:</span> Top local movers exhibit a high level of professionalism in their communication, conduct, and service delivery.</li>
+                 </div>
+                 <div>
+                  <li><span>Positive Reviews:</span> A reputable local mover often boasts positive reviews and testimonials from satisfied customers. You can analyze reliable reviews and ratings of top movers at My Moving Journey.</li>
+                 </div>
+                 <div>
+                  <li><span>Licensed and Insurance:</span>Reliable local movers are properly licensed and insured, which gives you peace of mind and protects your belongings throughout the moving process.</li>
+                 </div>
+              </div>
+              <div class="col-lg-10 col-md-10 col-sm-10">
+                <h1>Local Movers – Average Cost Analysis</h1>
+                <p>The expense of hiring local movers can fluctuate based on several variables, including the distance of the move, the size of the relocation, and the desired services. On average, local movers typically charge between $20 and $50 per hour per mover. For a 2-bedroom apartment move within a 50-mile radius, the cost ranges from $250 to $650, with larger spaces incurring higher charges.It is important to note that these average costs are compiled from customer feedback on My Moving Journey and may differ from direct company quotes. You should gather quotes from various local moving companies to ensure an accurate estimate tailored to your specific requirements.</p>
+              </div>
+              <div class="col-lg-10 col-md-10 col-sm-10">
+                <h1>Factors Impacting Local Movers' Costs</h1>
+                <p>Understanding the factors that impact local movers' costs is crucial for planning a budget-friendly and efficient relocation. Here are key elements influencing the expenses associated with local moving services.</p>
+                <div>
+                  <li><span>Distance:</span> The proximity between locations significantly affects the overall moving cost.</li>
+                 </div>
+                 <div>
+                  <li><span>Volume:</span> The quantity and size of items being moved contribute to the expenses incurred.</li>
+                 </div>
+                 <div>
+                  <li><span>Additional Services:</span> Moving during peak seasons or weekends may increase costs due to increased demand.</li>
+                 </div>
+                 <div>
+                  <li><span>Timeline:</span>Opting for services like packing, unpacking, and storage can add to the total moving costs.</li>
+                 </div>
+                 <div>
+                  <li><span>Company Policies:</span> Pricing structures and policies can vary among different local moving companies, influencing the overall cost.</li>
+                 </div>
+              </div>
+              <div class="col-lg-10 col-md-10 col-sm-10">
+                <h1>Reasons to Choose Local Movers</h1>
+                <p>Selecting the right movers is integral for a successful relocation, and opting for local movers brings several advantages. Here are compelling reasons why choosing local movers is an intelligent decision for a smooth and hassle-free moving experience.</p>
+                <div>
+                  <li><span>Familiarity:</span> Local movers possess knowledge of the local geography, ensuring efficient and reliable navigation during the move.</li>
+                 </div>
+                 <div>
+                  <li><span>Personalized Services:</span> Local movers offer personalized and attentive services designed to meet the unique needs of your local community.</li>
+                 </div>
+                 <div>
+                  <li><span>ACost-Effective Solutions:</span>  Choosing local movers can be more cost-effective, especially for shorter-distance moves.</li>
+                 </div>
+                 <div>
+                  <li><span>Community Reputation:</span>Best local movers have a reputation within the community, providing trust and reliability.</li>
+                 </div>
+                 <div>
+                  <li><span>Quick Response and Flexibility:</span>Top-rated local moving experts offer quicker response times and greater flexibility in scheduling to accommodate your specific requirements.</li>
+                 </div>
+              </div>
+            </div>
+           </div>
+
+
+
+
+
+
+
+
+
+
+    <hr class="border border-dark border-1 opacity-20"/>
+    <!-- Footer -->
+    <div class="container-lg">
+     <div class="row">
+       <div class="col-lg-3 col-md-6 col-sm-6 col-6 text-start ">
+         <h2><a class="fs-3" style="color: #1f3468;" href="">Movers</a></h2>
+         <div>Movers In USA</div>
+         <div>Long Distance Movers</div>
+         <div>Local Movers</div>
+         <div>Movers By Route</div>
+       </div>
+       <div class="col-lg-3 col-md-6 mb-4 col-6 col-sm-6 text-start">
+         <a class="fs-3" href="" style="color: #1f3468;">Links</a>
+         <div>Home</div>
+         <div>About us</div>
+         <div>Moverss</div>
+         <div>Blogs</div>
+         <div>Contact us</div>
+         <div>Write a Review</div>
+       </div>
+       <div class="col-lg-3 col-md-6 text-start">
+         <a class="fs-3" href="" style="color: #1f3468;">Business</a>
+         <div>Company Login</div>
+         <div>Registr your Company</div>
+         <div>Site Map</div>
+         <div>Get Quote</div>
+       </div>
+       <div class="col-lg-3 col-md-6 mb-4">
+         <a class="fs-3" href="" style="color: #1f3468;">Search Companie</a></br>
+         <input type="text" name="Search" placeholder="Search" style="padding: 5px; padding-inline: 10px; margin-top: 10px; ">
+         <h2 style="margin-top: 10px;">Email</h2>
+         <a
+         
+         >contact@mymovingjourney.com</a>
+       </div>
+     </div>
+     <div class="row d-flex justify-content-between ">
+      <div class="col-auto align-self-start ">
+        <img src="https://mymovingjourney.com/assets/img/MMJ-Logo-Remake-04.png" class="img-fluid footer-img" height="200px"width="200px" >
+      </div>
+      <div class="col-lg-4 col-md-8 col-sm-12 d-flex justify-content-center align-self-end" >
+        <div class="p-2 icon-zoom"><i style="font-size: xx-large; color: #1f3468;" class="bi bi-facebook"></i></div>
+        <div class="p-2 icon-zoom"><i style="font-size: xx-large; color: #1f3468" class="bi bi-linkedin"></i></div>
+        <div class="p-2 icon-zoom"><i style="font-size: xx-large; color: #1f3468" class="bi bi-twitter"></i></div>
+        <div class="p-2 icon-zoom"><i style="font-size: xx-large; color: #1f3468" class="bi bi-pinterest"></i></div>
+        <div class="p-2 icon-zoom" ><i style="font-size: xx-large; color: #1f3468" class="bi bi-people-fill"  ></i></div>
+      </div>
+      
+     </div>
+    </div>
+
+     <div class="container-lg">
+      <hr>
+     </div>
+     <div class="go-top active" id="goTopButton">
+      <i  class="bi bi-arrow-up-circle-fill" style="font-size: xx-large; color: #1f3468;"></i>                                        
+    </div>
+    
+    
+    <div class="container-lg d-flex footer-copy flex-wrap justify-content-between mb-2" style="color: #1f3468;">
+      <div class="col-lg-3 col-md-5 col-12 mb-1 mb-md-0">
+        <h6 class="footer-h6">Copyright 2024 Mymovingjourney.com. All Rights Reserved.</h6>
+      </div>
+      <div class="col-lg-3 col-md-7 col-12">
+        <h6>Privacy Policy | Terms & Services</h6>
+      </div>
+    </div>    
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      function toggleExpand() {
+        console.log("Toggle function called");
+        const extraText = document.querySelectorAll("[data-extra-text]");
+        const seeMoreText = document.querySelectorAll("[data-see-more]");
+    
+        for(let i = 0 ; i < extraText.length; i++){
+          
+          if (extraText[i].style.display === "none" || extraText[i].style.display === "") {
+          // Show the extra text
+          extraText[i].style.display = "inline";
+          seeMoreText[i].textContent = "See Less";
+        } else {
+          // Hide the extra text
+          extraText[i].style.display = "none";
+          seeMoreText[i].textContent = "See More";
+        }
+        }
+
+
+        
+      }
+        // JavaScript to handle dropdown behavior
+        $(document).ready(function () {
+            const navItem = $(".nav-item");
+
+            navItem.mouseover(function () {
+                const dropdownMenu = $(this).find(".dropdown-menu");
+                dropdownMenu.css("display", "block");
+            });
+
+            
+            navItem.mouseleave(function (e) {
+                const dropdownMenu = $(this).find(".dropdown-menu");
+                // Check if mouse is leaving the nav item or dropdown menu
+                if (!$(this).is(e.relatedTarget) && !dropdownMenu.has(e.relatedTarget).length) {
+                    dropdownMenu.css("display", "none");
+                }
+            });
+  //       
+            // nev hover
+            var dropdownTimer;
+
+            function openDropdown() {
+                clearTimeout(dropdownTimer);
+                var dropdownMenu = $('.nav-item.dropdown .dropdown-menu');
+                dropdownMenu.addClass('show');
+                dropdownMenu.attr('aria-expanded', 'true');
+            }
+
+            function closeDropdown() {
+                dropdownTimer = setTimeout(function () {
+                    var dropdownMenu = $('.nav-item.dropdown .dropdown-menu');
+                    dropdownMenu.removeClass('show');
+                    dropdownMenu.attr('aria-expanded', 'false');
+                }, 500); // Delay in milliseconds before closing the dropdown
+            }
+
+            // Show or hide the go-top button based on scroll position
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('#goTopButton').addClass('active');
+                } else {
+                    $('#goTopButton').removeClass('active');
+                }
+            });
+
+            // Smooth scroll to top when the button is clicked
+            $('#goTopButton').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 800);
+                return false; // Prevent default link behavior
+            });
+        });
+        // pagenations
+          
+        
+         
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

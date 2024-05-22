@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!--nav -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-body-white border border-dark-subtle border border-danger"
+    style="background-color: #ffffff;">
+    <div class="container">
+      <img class="img-fluid nav-contanier padding" src="https://mymovingjourney.com/assets/img/MMJ-Logo-Remake-04.png"
+        alt="Logo" width="80" height="80" class="d-inline-block align-text-top" />
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color: black;"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active" style="color: #1f3468" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown" onmouseleave="closeDropdown()">
+            <a class="nav-link active " style="color: #1f3468;text-wrap: nowrap;" href="./Moversusa.html"
+              aria-haspopup="true" aria-expanded="false" onmouseover="openDropdown()">
+              Movers in USA
+            </a>
+            <ul class="dropdown-menu" style="color: #1f3468">
+              <li><a class="dropdown-item" href="./Moversroute.html">Movers by Route</a></li>
+              <li><a class="dropdown-item" href="./LocalMover.html">Local Movers</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Long Distance Movers</a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="./Blogs.html" style="color: #1f3468;">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a
+             href="./Quote.html"
+              class="nav-link active"
+              aria-disabled="true"
+              style="
+                color: #1f3468;
+                text-wrap: nowrap;
+              "
+              >Get Quote</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+            href="./About.html"
+              class="nav-link active"
+              style="color: #1f3468; text-wrap: nowrap; padding: 10xp"
+              aria-disabled="true"
+              >About Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="./Login.html"
+              class="nav-link active"
+              style="color: #1f3468"
+              aria-disabled="true"
+              >Login</a
+            >
+          </li>
+          <a href="./Button.html">
+            <button href="./Button.html" class="rounded" id="register-btn" type="button">
+              <span style="font-weight: 500;">Add Business</span>
+            </button>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- blogs -->
+  <div class="container-fluid bg-blogs ">
+    <div class="container ">
+      <div class="row blogs-main">
+
+        <div class="col-lg-7 col-md-10 col-sm-10 col-12 left-blogs ">
+          <h1 class="">BLOGS</h1>
+
+          <div class="search-container rounded-pill">
+            <input type="text" name="Search" class="search-input" placeholder="Search" />
+            <i class="bi bi-search search-icon"></i>
+          </div>
+          <p class="pt-3">
+            Let’s face it: Moving can be incredibly stressful. Choosing the
+            right moving company to work with is a great start, because
+            experienced movers with the power to help you with the logistics
+            of a local or cross-country move can make the whole process go
+            much more smoothly. But there are plenty of steps you can take to
+            make your relocation less of a hassle and protect your belongings
+            in the process.
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-10 col-sm-10 col-11 right-blogs rounded-top rounded-bottom" id="movingForm">
+          <h3 class="right-blogs-h3">GET MOVING QUOTE</h3>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">City You Are Moving From</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Zip From" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">City You Are Moving To</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Zip to" />
+            </div>
+            <button type="button" class="btn btn-secondary blogs-btn" style="padding-inline: 10px;" >Submit</button>
+          </form>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <!-- cards -->
+  <div class="container-fluid main-cardss">
+    <div class="container">
+      <div class="row card-pract-3">
+        <div class="col-lg-8 col-md-12 col-sm-12 col-12 pb-2 main-left-blogs">
+          <div class="row mb-1 card-container ">
+            <div class="container mt-1">
+              <div class="row">
+                <div class="col-lg-12 ">
+                  <article class="blog-card">
+                    <div class="blog-card__background">
+                      <div class="card__background--wrapper">
+                        <div class="card__background--main" style="background-image: url('https://mymovingjourney.com/posts/image/everything-you-need-to-learn-about-moving-to-naples-florida.jpg');">
+                         
+                        </div>
+                      </div>
+                    </div>
+                    <div class="blog-card__head">
+                      <span class="date__box">
+                        <span class="date__day">11</span>
+                        <span class="date__month">May 2024</span>
+                      </span>
+                    </div>
+                    <div class="blog-card__info">
+                      <h5>9 Best ways to pack shoes for moving</h5>
+                      <p> Packing shoes for a move can certainly present a challenge, given their bulkiness and weight.Take
+                        necessary steps to ensure your belongings, including footwear, are clean and odor-free. Proper
+                        planning and preparation are key to a successful move..
+                        
+                        </p>
+                      <a href="https://mymovingjourney.com/moving-resources/best-ways-to-pack-shoes-for-moving" target="_blank" class="btn btn--with-icon"><i class="btn-icon fa fa-long-arrow-right" ></i>READ MORE</a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="row mb-1 card-container ">
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <article class="blog-card">
+                      <div class="blog-card__background">
+                        <div class="card__background--wrapper">
+                          <div class="card__background--main" style="background-image: url('https://mymovingjourney.com/posts/image/6-reliable-ways-to-hire-professionals-to-move-furniture.webp');">
+                            <div class="card__background--layer"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="blog-card__head">
+                        <span class="date__box">
+                          <span class="date__day">15</span>
+                          <span class="date__month">May 2024</span>
+                        </span>
+                      </div>
+                      <div class="blog-card__info">
+                        <h5>6 Reliable Ways to Hire Professionals to Move</h5>
+                        <p> Packing shoes for a move can certainly present a challenge, given their bulkiness and weight.Take
+                          necessary steps to ensure your belongings, including footwear, are clean and odor-free. Proper
+                          planning and preparation are key to a successful move.
+                          
+                          </p>
+                        <a href="https://mymovingjourney.com/moving-resources/hire-professionals-to-move-furniture" target="_blank" class="btn btn--with-icon"><i class="btn-icon fa fa-long-arrow-right" ></i>READ MORE</a>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="row mb-1 card-container ">
+                <div class="container mt-5">
+                  <div class="row">
+                    <div class="col-12">
+                      <article class="blog-card">
+                        <div class="blog-card__background">
+                          <div class="card__background--wrapper">
+                            <div class="card__background--main" style="background-image: url('https://mymovingjourney.com/posts/image/9-best-ways-to-pack-shoes-for-moving-journey.webp');">
+                              <div class="card__background--layer"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="blog-card__head">
+                          <span class="date__box">
+                            <span class="date__day">16</span>
+                            <span class="date__month">May 2024</span>
+                          </span>
+                        </div>
+                        <div class="blog-card__info">
+                          <h5>8 Best Packing Tips for Moving Out of State</h5>
+                          <p> Packing shoes for a move can certainly present a challenge, given their bulkiness and weight.Take
+                            necessary steps to ensure your belongings, including footwear, are clean and odor-free. Proper
+                            planning and preparation are key to a successful move
+                            
+                            </p>
+                          <a href="https://mymovingjourney.com/moving-resources/packing-tips-for-moving-out-of-state" target="_blank" class="btn btn--with-icon"><i class="btn-icon fa fa-long-arrow-right" ></i>READ MORE</a>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="row mb-1 card-container ">
+                  <div class="container mt-5">
+                    <div class="row">
+                      <div class="col-12">
+                        <article class="blog-card">
+                          <div class="blog-card__background">
+                            <div class="card__background--wrapper">
+                              <div class="card__background--main" style="background-image: url('https://mymovingjourney.com/posts/image/everything-you-need-to-learn-about-moving-to-naples-florida.jpg');">
+                                <div class="card__background--layer"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="blog-card__head">
+                            <span class="date__box">
+                              <span class="date__day">22</span>
+                              <span class="date__month">May 2024</span>
+                            </span>
+                          </div>
+                          <div class="blog-card__info">
+                            <h5>Everything You Need to Learn About Moving</h5>
+                            <p> Packing shoes for a move can certainly present a challenge, given their bulkiness and weight.Take
+                              necessary steps to ensure your belongings, including footwear, are clean and odor-free. Proper
+                              planning and preparation are key to a successful move
+                              
+                              </p>
+                            <a href="https://mymovingjourney.com/moving-resources/moving-to-naples" target="_blank" class="btn btn--with-icon"><i class="btn-icon fa fa-long-arrow-right" ></i>READ MORE</a>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="row mb-1 card-container ">
+                    <div class="container mt-5">
+                      <div class="row">
+                        <div class="col-12">
+                          <article class="blog-card">
+                            <div class="blog-card__background">
+                              <div class="card__background--wrapper">
+                                <div class="card__background--main" style="background-image: url('https://mymovingjourney.com/posts/image/a-complete-moving-guide-to-tampa-florida.jpg');">
+                                  <div class="card__background--layer"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="blog-card__head">
+                              <span class="date__box">
+                                <span class="date__day">23</span>
+                                <span class="date__month">May 2024</span>
+                              </span>
+                            </div>
+                            <div class="blog-card__info">
+                              <h5>A Complete moving guide to Tampa, Florida</h5>
+                              <p> Packing shoes for a move can certainly present a challenge, given their bulkiness and weight.Take
+                                necessary steps to ensure your belongings, including footwear, are clean and odor-free. Proper
+                                planning and preparation are key to a successful move
+                                
+                                </p>
+                              <a href="https://mymovingjourney.com/moving-resources/moving-to-tampa" target="_blank" class="btn btn--with-icon"><i class="btn-icon fa fa-long-arrow-right" ></i>READ MORE</a>
+                            </div>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="row mb-1 card-container ">
+                      <div class="container mt-5">
+                        <div class="row">
+                          <div class="col-12">
+                            <article class="blog-card">
+                              <div class="blog-card__background">
+                                <div class="card__background--wrapper">
+                                  <div class="card__background--main" style="background-image: url('https://mymovingjourney.com/posts/image/discover-the-magic-of-moving-to-orlando-with-our-ultimate-guide.jpg');">
+                                    <div class="card__background--layer"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="blog-card__head">
+                                <span class="date__box">
+                                  <span class="date__day">25</span>
+                                  <span class="date__month">May 2024</span>
+                                </span>
+                              </div>
+                              <div class="blog-card__info">
+                                <h5>Discover the Magic of Moving</h5>
+                                <p> Packing shoes for a move can certainly present a challenge, given their bulkiness and weight.Take
+                                  necessary steps to ensure your belongings, including footwear, are clean and odor-free. Proper
+                                  planning and preparation are key to a successful move
+                                  
+                                  </p>
+                                <a href="https://mymovingjourney.com/moving-resources/moving-to-Orlando" target="_blank" class="btn btn--with-icon"><i class="btn-icon fa fa-long-arrow-right" ></i>READ MORE</a>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="row mb-1 card-container ">
+                        <div class="container mt-5">
+                          <div class="row">
+                            <div class="col-12">
+                              <article class="blog-card">
+                                <div class="blog-card__background">
+                                  <div class="card__background--wrapper">
+                                    <div class="card__background--main" style="background-image: url('https://mymovingjourney.com/posts/image/a-complete-guide-recommendations-for-moving-to-florida-in-2024.jpg');">
+                                      <div class="card__background--layer"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="blog-card__head">
+                                  <span class="date__box">
+                                    <span class="date__day">26</span>
+                                    <span class="date__month">May 2024</span>
+                                  </span>
+                                </div>
+                                <div class="blog-card__info">
+                                  <h5>Recommendations for Moving to Florida in 2024</h5>
+                                  <p> Packing shoes for a move can certainly present a challenge, given their bulkiness and weight.Take
+                                    necessary steps to ensure your belongings, including footwear, are clean and odor-free. Proper
+                                    planning and preparation are key to a successful move
+                                    
+                                    </p>
+                                  <a href="https://mymovingjourney.com/moving-resources/moving-to-florida" target="_blank" class="btn btn--with-icon"><i class="btn-icon fa fa-long-arrow-right" ></i>READ MORE</a>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="row mb-1 card-container ">
+                          <div class="container mt-5">
+                            <div class="row">
+                              <div class="col-12">
+                                <article class="blog-card">
+                                  <div class="blog-card__background">
+                                    <div class="card__background--wrapper">
+                                      <div class="card__background--main" style="background-image: url('https://mymovingjourney.com/posts/image/how-to-pack-toiletries-a-guide-for-efficient-moving.jpg');">
+                                        <div class="card__background--layer"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="blog-card__head">
+                                    <span class="date__box">
+                                      <span class="date__day">22</span>
+                                      <span class="date__month">May 2024</span>
+                                    </span>
+                                  </div>
+                                  <div class="blog-card__info">
+                                    <h5>13 Efficient Home Packing Tips</h5>
+                                    <p> Packing shoes for a move can certainly present a challenge, given their bulkiness and weight.Take
+                                      necessary steps to ensure your belongings, including footwear, are clean and odor-free. Proper
+                                      planning and preparation are key to a successful move
+                                      
+                                      </p>
+                                    <a href="https://mymovingjourney.com/moving-resources/how-to-pack-toiletries" target="_blank" class="btn btn--with-icon"><i class="btn-icon fa fa-long-arrow-right" ></i>READ MORE</a>
+                                  </div>
+                                </article>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                          <div class="row mb-1 card-container ">
+                            <div class="container mt-5">
+                              <div class="row">
+                                <div class="col-12">
+                                  <article class="blog-card">
+                                    <div class="blog-card__background">
+                                      <div class="card__background--wrapper">
+                                        <div class="card__background--main" style="background-image: url('https://mymovingjourney.com/posts/image/13-efficient-home-packing-tips-for-moving-in-a-hurry.jpg');">
+                                          <div class="card__background--layer"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="blog-card__head">
+                                      <span class="date__box">
+                                        <span class="date__day">11</span>
+                                        <span class="date__month">May 2024</span>
+                                      </span>
+                                    </div>
+                                    <div class="blog-card__info">
+                                      <h5>13 Efficient Home Packing Tips</h5>
+                                      <p> Packing shoes for a move can certainly present a challenge, given their bulkiness and weight.Take
+                                        necessary steps to ensure your belongings, including footwear, are clean and odor-free. Proper
+                                        planning and preparation are key to a successful move
+                                        
+                                        </p>
+                                      <a href="https://mymovingjourney.com/moving-resources/packing-tips-for-moving-in-a-hurry" target="_blank" class="btn btn--with-icon"><i class="btn-icon fa fa-long-arrow-right" ></i>READ MORE</a>
+                                    </div>
+                                  </article>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                            <div class="row mb-1 card-container ">
+                              <div class="container mt-5">
+                                <div class="row">
+                                  <div class="col-12">
+                                    <article class="blog-card">
+                                      <div class="blog-card__background">
+                                        <div class="card__background--wrapper">
+                                          <div class="card__background--main" style="background-image: url('https://mymovingjourney.com/posts/image/tips-and-ideas-for-moving-with-plants-a-complete-guide.jpg');">
+                                            <div class="card__background--layer"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="blog-card__head">
+                                        <span class="date__box">
+                                          <span class="date__day">11</span>
+                                          <span class="date__month">May 2024</span>
+                                        </span>
+                                      </div>
+                                      <div class="blog-card__info">
+                                        <h5>Tips and Ideas for Moving with Plants</h5>
+                                        <p> Packing shoes for a move can certainly present a challenge, given their bulkiness and weight.Take
+                                          necessary steps to ensure your belongings, including footwear, are clean and odor-free. Proper
+                                          planning and preparation are key to a successful move
+                                          
+                                          </p>
+                                        <a href="https://mymovingjourney.com/moving-resources/tips-and-ideas-for-moving-with-plants" target="_blank" class="btn btn--with-icon"><i class="btn-icon fa fa-long-arrow-right" ></i>READ MORE</a>
+                                      </div>
+                                    </article>
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+            </div>
+            <div class="col-lg-4 col-md-8 col-sm-9 col-8 second-3rd rounded-bottom rounded-top">
+              <div class="row search-box shadow-lg mb-3 mt-1">
+                  <input class="col-lg-3 col-md-4 w-50 mb-2" type="text" name="Search" id="">
+                  <button class="col-lg-3 col-md-4" style="background-color: #1f3468; color: aliceblue;" type="button">Search</button>
+              </div>
+              <h2 class="d-flex justify-content-center mt-3 mb-3" style="color: #1f3468;">Trending posts</h2>
+              <div class="row search-box shadow-lg mb-4 rounded-top card-hover-effect">
+                  <div class="main d-flex w-100">
+                      <h2>01</h2>
+                      <h4 class="ms-3">Everything You Need</h4>
+                  </div>
+                  <p>10 May 2024</p>
+                  <p>Packing shoes for a move</p>
+              </div>
+              <div class="row search-box shadow-lg mb-4 rounded-top card-hover-effect">
+                  <div class="main d-flex w-100">
+                      <h2>02</h2>
+                      <h4 class="ms-3">Hire Professionals</h4>
+                  </div>
+                  <p>14 May 2024</p>
+                  <p>Packing shoes for a move</p>
+              </div>
+              <div class="row search-box shadow-lg mb-4 rounded-top card-hover-effect">
+                  <div class="main d-flex w-100">
+                      <h2>03</h2>
+                      <h4 class="ms-3">Moving guide to Tampa</h4>
+                  </div>
+                  <p>20 May 2024</p>
+                  <p>Tampa is the big city in Florida.</p>
+              </div>
+              <div class="row search-box shadow-lg mb-4 rounded-top card-hover-effect">
+                  <div class="main d-flex w-100">
+                      <h2>04</h2>
+                      <h4 class="ms-3">How to Pack Toiletries</h4>
+                  </div>
+                  <p>25 May 2024</p>
+                  <p>The list of bathroom toiletries is very long</p>
+              </div>
+              <div class="row search-box shadow-lg mb-4 rounded-top">
+                <div class="main d-flex w-100">
+                    <h2 class="">Categories<hr></h2>
+                </div>
+                <p class="p-hover-effect d-inline-block">Packing and storage</p>
+                <p class="p-hover-effect">Moving Resources</p>
+            </div>
+            
+          </div>
+          
+          </div>   
+          </div>
+        </div>
+        
+        
+      </div>
+      <!-- <div class="row card-pract ">
+          <div class="col-lg-12 col-md-6 col-sm-12">
+              <div class="image-container">
+                  <img class="img-fluid rounded-top" src="https://mymovingjourney.com/posts/image/9-best-ways-to-pack-shoes-for-moving-journey.webp" alt="Image 1" style="height: 350px; " >
+                  <div class="content-overlay">
+                      <div class="content">
+                          <h1 class="fs-3">9 Best ways to pack shoes for moving Journey</h1>
+                          <p>When relocating, many individuals understandably become preoccupied with larger concerns than ways to pack shoe boxes for moving.Sorting your footwear is a crucial aspect of a successful relocation process, and it can greatly alleviate the stress associated with moving</p>
+                          <a href="#">May 10, 2024</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <div class="col-lg-8 col-md-6 col-sm-12">
+              <div class="image-container">
+                  <img class="img-fluid rounded-top" src="https://mymovingjourney.com/posts/image/6-reliable-ways-to-hire-professionals-to-move-furniture.webp"  style="height: 350px;" alt="Image 2">
+                  <div class="content-overlay">
+                      <div class="content">
+                          <h1 class="fs-3" >6 Reliable Ways to Hire Professionals to Move Furniture</h1>
+                          <p>Moving is not about transportation from origin to destination. It is a full process that needs to be performed and followed in a perfect manner to make a secure and manageable relocation</p>
+                          <a href="#">May 10, 2024</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="image-container">
+                  <img class="img-fluid rounded-top" src="https://mymovingjourney.com/posts/image/8-best-packing-tips-for-moving-out-of-state.webp"  style="height: 350px;" alt="Image 3">
+                  <div class="content-overlay">
+                      <div class="content">
+                          <h1 class="fs-3">8 Best Packing Tips for Moving Out of State</h1>
+                          <p>My Moving Journey has put together expert packing tips for an out-of-state move. These tips will guide you through the entire packing process</p>
+                          <a href="#">May 10, 2024</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 col-sm-12 ">
+              <div class="image-container">
+                  <img class="img-fluid rounded-top" src="https://mymovingjourney.com/posts/image/everything-you-need-to-learn-about-moving-to-naples-florida.jpg"  style="height: 350px;" alt="Image 4">
+                  <div class="content-overlay">
+                      <div class="content">
+                          <h1 class="fs-3">Everything You Need to Learn About Moving to Naples, Florida</h1>
+                          <p>Naples, Florida, is a lovely Collier County community in the southwestern corner</p>
+                          <a href="#">May 10, 2024</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <div class="col-lg-8 col-md-6 col-sm-12 ">
+              <div class="image-container">
+                  <img class="img-fluid rounded-top" src="https://mymovingjourney.com/posts/image/a-complete-moving-guide-to-tampa-florida.jpg"  style="height: 350px;" alt="Image 5">
+                  <div class="content-overlay">
+                      <div class="content">
+                          <h1 class="fs-3">A Complete moving guide to Tampa, Florida</h1>
+                          <p>Tampa has a diverse population which has a total of 380,476 residents have an average age of 35.9. This includes 49.64% men and 50.36% women</p>
+                          <a href="#">May 10, 2024</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-8 col-md-6 col-sm-12 ">
+            <div class="image-container">
+                <img class="img-fluid rounded-top" src="https://mymovingjourney.com/posts/image/discover-the-magic-of-moving-to-orlando-with-our-ultimate-guide.jpg"  style="height: 350px;" alt="Image 5">
+                <div class="content-overlay">
+                    <div class="content">
+                        <h1 class="fs-3">Discover the Magic of Moving to Orlando with Our Ultimate Guide</h1>
+                        <p>Orlando, Florida, is a great place to move to for people looking to experience new surrouonding</p>
+                        <a href="#">May 10, 2024</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+         <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="image-container">
+              <img class="img-fluid rounded-top" src="https://mymovingjourney.com/posts/image/a-complete-guide-recommendations-for-moving-to-florida-in-2024.jpg"  style="height: 350px;" alt="Image 5">
+              <div class="content-overlay">
+                  <div class="content">
+                      <h1 class="fs-3">A Complete Guide: Recommendations for Moving to Florida in 2024</h1>
+                      <p>The city has a strong job market in several industries. Las Olas Isles, Victoria Park, and Coral Ridge are some of the best neighborhoods in Fort Lauderdale</p>
+                      <a href="#">May 10, 2024</a>
+                  </div>
+              </div>
+          </div>
+          </div>
+            <div class="col-lg-5 col-md-6 col-sm-12">
+          <div class="image-container">
+            <img class="img-fluid rounded-top" src="https://mymovingjourney.com/posts/image/13-efficient-home-packing-tips-for-moving-in-a-hurry.jpg"  style="height: 350px;" alt="Image 5">
+            <div class="content-overlay">
+                <div class="content">
+                    <h1 class="fs-3">13 Efficient Home Packing Tips for Moving in a Hurry</h1>
+                    <p>Organization of belongings into categories is a good idea before the start of the packing process</p>
+                    <a href="#">May 10, 2024</a>
+                </div>
+            </div>
+        </div>
+         </div>
+       <div class="col-lg-7 col-md-6 col-sm-12">
+       <div class="image-container">
+          <img class="img-fluid rounded-top" src="https://mymovingjourney.com/posts/image/tips-and-ideas-for-moving-with-plants-a-complete-guide.jpg"  style="height: 350px;" alt="Image 5">
+          <div class="content-overlay">
+              <div class="content">
+                  <h1 class="fs-3">Tips and Ideas for Moving with Plants: A Complete Guide</h1>
+                  <p>Moving with plants can be a stressful experience. If you’re a plant lover, you’ll want to ensure your plants make it safely to their new home</p>
+                  <a href="#">May 10, 2024</a>
+              </div>
+          </div>
+        </div>
+       </div>
+       </div>
+       -->
+
+
+
+
+    </div>
+
+
+    <!-- <div class="row">
+            <div class="col-lg-8 col-md-10">
+                <div class="card mb-1 mt-5 blogs-card " >
+                    <div class="row ">
+                      <div class="col-md-5 col-lg-5 blogs-cards-firist">
+                        <img src="https://mymovingjourney.com/posts/image/9-best-ways-to-pack-shoes-for-moving-journey.webp" class="img-fluid blogs-card-img " alt="...">
+                      </div>
+                      <div class="col-md-7 col-lg-7">
+                        <div class="card-body">
+                            <a href="">May 10 2024</a>
+                          <h5 class="card-title">How to Pack Toiletries: A Guide for Efficient Moving.</h5>
+                          <p class="card-text">Sorting your footwear is a crucial aspect of a successful relocation process, and it can greatly alleviate the stress associated with moving</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-1 mt-4 blogs-card" >
+                    <div class="row ">
+                      <div class="col-md-5 col-lg-5 blogs-cards-firist">
+                        <img src="https://mymovingjourney.com/posts/image/6-reliable-ways-to-hire-professionals-to-move-furniture.webp" class="img-fluid blogs-card-img " alt="...">
+                      </div>
+                      <div class="col-md-7 col-lg-7">
+                        <div class="card-body">
+                            <a href="">May 10 2024</a>
+                          <h5 class="card-title">Tips and Ideas for Moving with Plants: A Complete Guide</h5>
+                          <p class="card-text">Moving is not easy that can be done by yourself without any assistance. At some point you have to hire professionals to complete your move.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-1 mt-4 blogs-card" >
+                    <div class="row ">
+                      <div class="col-md-5 col-lg-5 blogs-cards-firist">
+                        <img src="https://mymovingjourney.com/posts/image/tips-and-ideas-for-moving-with-plants-a-complete-guide.jpg" class="img-fluid blogs-card-img " alt="...">
+                      </div>
+                      <div class="col-md-7 col-lg-7">
+                        <div class="card-body">
+                            <a href="">May 10 2024</a>
+                          <h5 class="card-title">A Complete Guide: Recommendations for Moving to Florida in 2024.</h5>
+                          <p class="card-text">Use of different kinds of equipment and tools like dollies and straps also improve efficiency in carrying furniture.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-1 mt-4 blogs-card" >
+                    <div class="row ">
+                      <div class="col-md-5 col-lg-5 blogs-cards-firist">
+                        <img src="https://mymovingjourney.com/posts/image/a-complete-moving-guide-to-tampa-florida.jpg" class="img-fluid blogs-card-img " alt="...">
+                      </div>
+                      <div class="col-md-7 col-lg-7">
+                        <div class="card-body">
+                            <a href="">May 10 2024</a>
+                          <h5 class="card-title">Discover the Magic of Moving to Orlando with Our Ultimate Guide and learn more.</h5>
+                          <p class="card-text">Naples, Florida, is a lovely Collier County community in the southwestern corner. About 22,000 inhabitants call this their home.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-1 mt-4 blogs-card" >
+                    <div class="row ">
+                      <div class="col-md-5 col-lg-5 blogs-cards-firist">
+                        <img src="https://mymovingjourney.com/posts/image/13-efficient-home-packing-tips-for-moving-in-a-hurry.jpg" class="img-fluid blogs-card-img " alt="...">
+                      </div>
+                      <div class="col-md-7 col-lg-7">
+                        <div class="card-body">
+                            <a href="">May 10 2024</a>
+                          <h5 class="card-title">Everything You Need to Learn About Moving to Naples, Florida.</h5>
+                          <p class="card-text">9 best ways to pack shoes for moving Journey.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-1 mt-4 blogs-card" >
+                    <div class="row ">
+                      <div class="col-md-5 col-lg-5 blogs-cards-firist">
+                        <img src="https://mymovingjourney.com/posts/image/how-to-pack-toiletries-a-guide-for-efficient-moving.jpg" class="img-fluid blogs-card-img " alt="...">
+                      </div>
+                      <div class="col-md-7 col-lg-7">
+                        <div class="card-body">
+                            <a href="">May 10 2024</a>
+                          <h5 class="card-title">9 best ways to pack shoes for moving Journey is your go to packing guide.Click and learn more.</h5>
+                          <p class="card-text">Utilize the nearly empty tubes of toothpaste, shampoos, cosmetic products.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </div>
+            <div class="col-lg-4 col-md-6 mt-5">
+                <h3 class="recent">Recent blogs</h3>
+                <div class="card mb-4" >
+                    <div class="row">
+                      
+                      <div class="col-md-7 col-lg-6">
+                        <div class="card-body">
+                            <a href="">May 10 2024</a>
+                          <p class="card-title">9 best ways to pack shoes for moving Journey.</p>
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-lg-6 blogs-cards-second">
+                        <img src="https://mymovingjourney.com/posts/image/9-best-ways-to-pack-shoes-for-moving-journey.webp" class="img-fluid  " alt="...">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-4" >
+                    <div class="row">
+                      <div class="col-md-7 col-lg-6">
+                        <div class="card-body">
+                            <a href="">May 10 2024</a>
+                          <p class="card-title">9 best ways to pack shoes for moving Journey.</p>
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-lg-6 blogs-cards-second">
+                        <img src="https://mymovingjourney.com/posts/image/a-complete-moving-guide-to-tampa-florida.jpg" class="img-fluid  " alt="...">
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="card mb-4" >
+                    <div class="row">
+                      <div class="col-md-7 col-lg-6">
+                        <div class="card-body">
+                            <a href="">May 10 2024</a>
+                          <p class="card-title">9 best ways to pack shoes for moving Journey.</p>
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-lg-6 blogs-cards-second">
+                        <img src="https://mymovingjourney.com/posts/image/9-best-ways-to-pack-shoes-for-moving-journey.webp" class="img-fluid  " alt="...">
+                      </div>
+                     
+                    </div>
+                  </div>
+            </div>
+          </div> -->
+  </div>
+  </div>
+
+  <hr class="border border-dark border-1 opacity-20" />
+  <!-- Footer -->
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6 col-6 text-start ">
+        <h2><a class="fs-3" style="color: #1f3468;" href="">Movers</a></h2>
+        <div>Movers In USA</div>
+        <div>Long Distance Movers</div>
+        <div>Local Movers</div>
+        <div>Movers By Route</div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 col-6 col-sm-6 text-start">
+        <a class="fs-3" href="" style="color: #1f3468;">Links</a>
+        <div>Home</div>
+        <div>About us</div>
+        <div>Moverss</div>
+        <div>Blogs</div>
+        <div>Contact us</div>
+        <div>Write a Review</div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-start">
+        <a class="fs-3" href="" style="color: #1f3468;">Business</a>
+        <div>Company Login</div>
+        <div>Registr your Company</div>
+        <div>Site Map</div>
+        <div>Get Quote</div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <a class="fs-3" href="" style="color: #1f3468;">Search Companie</a></br>
+        <input type="text" name="Search" placeholder="Search"
+          style="padding: 5px; padding-inline: 10px; margin-top: 10px; ">
+        <h2 style="margin-top: 10px;">Email</h2>
+        <a>contact@mymovingjourney.com</a>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-between ">
+      <div class="col-auto align-self-start ">
+        <img src="https://mymovingjourney.com/assets/img/MMJ-Logo-Remake-04.png" class="img-fluid footer-img"
+          height="200px" width="200px">
+      </div>
+      <div class="col-lg-4 col-md-8 col-sm-12 d-flex justify-content-center align-self-end">
+        <div class="p-2 icon-zoom"><i style="font-size: xx-large; color: #1f3468;" class="bi bi-facebook"></i></div>
+        <div class="p-2 icon-zoom"><i style="font-size: xx-large; color: #1f3468" class="bi bi-linkedin"></i></div>
+        <div class="p-2 icon-zoom"><i style="font-size: xx-large; color: #1f3468" class="bi bi-twitter"></i></div>
+        <div class="p-2 icon-zoom"><i style="font-size: xx-large; color: #1f3468" class="bi bi-pinterest"></i></div>
+        <div class="p-2 icon-zoom"><i style="font-size: xx-large; color: #1f3468" class="bi bi-people-fill"></i></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container-lg">
+    <hr>
+  </div>
+  <div class="go-top active" id="goTopButton">
+    <i class="bi bi-arrow-up-circle-fill" style="font-size: xx-large; color: #1f3468;"></i>
+  </div>
+
+
+  <div class="container-lg d-flex footer-copy flex-wrap justify-content-between mb-2" style="color: #1f3468;">
+    <div class="col-lg-3 col-md-5 col-12 mb-1 mb-md-0">
+      <h6 class="footer-h6">Copyright 2024 Mymovingjourney.com. All Rights Reserved.</h6>
+    </div>
+    <div class="col-lg-3 col-md-7 col-12">
+      <h6>Privacy Policy | Terms & Services</h6>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    function toggleExpand() {
+      console.log("Toggle function called");
+      const extraText = document.querySelectorAll("[data-extra-text]");
+      const seeMoreText = document.querySelectorAll("[data-see-more]");
+
+      for (let i = 0; i < extraText.length; i++) {
+
+        if (extraText[i].style.display === "none" || extraText[i].style.display === "") {
+          // Show the extra text
+          extraText[i].style.display = "inline";
+          seeMoreText[i].textContent = "See Less";
+        } else {
+          // Hide the extra text
+          extraText[i].style.display = "none";
+          seeMoreText[i].textContent = "See More";
+        }
+      }
+
+
+
+    }
+    // JavaScript to handle dropdown behavior
+    $(document).ready(function () {
+      const navItem = $(".nav-item");
+
+      navItem.mouseover(function () {
+        const dropdownMenu = $(this).find(".dropdown-menu");
+        dropdownMenu.css("display", "block");
+      });
+
+
+      navItem.mouseleave(function (e) {
+        const dropdownMenu = $(this).find(".dropdown-menu");
+        // Check if mouse is leaving the nav item or dropdown menu
+        if (!$(this).is(e.relatedTarget) && !dropdownMenu.has(e.relatedTarget).length) {
+          dropdownMenu.css("display", "none");
+        }
+      });
+      //       
+
+      // nev hover
+      var dropdownTimer;
+
+      function openDropdown() {
+        clearTimeout(dropdownTimer);
+        var dropdownMenu = $('.nav-item.dropdown .dropdown-menu');
+        dropdownMenu.addClass('show');
+        dropdownMenu.attr('aria-expanded', 'true');
+      }
+
+      function closeDropdown() {
+        dropdownTimer = setTimeout(function () {
+          var dropdownMenu = $('.nav-item.dropdown .dropdown-menu');
+          dropdownMenu.removeClass('show');
+          dropdownMenu.attr('aria-expanded', 'false');
+        }, 500); // Delay in milliseconds before closing the dropdown
+      }
+
+      // Show or hide the go-top button based on scroll position
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $('#goTopButton').addClass('active');
+        } else {
+          $('#goTopButton').removeClass('active');
+        }
+      });
+
+      // Smooth scroll to top when the button is clicked
+      $('#goTopButton').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 800);
+        return false; // Prevent default link behavior
+      });
+    });
+
+
+    //  hover on form
+    function moveForm() {
+      var formContainer = document.getElementById('movingForm');
+      var button = document.querySelector('.blogs-btn');
+
+      // Move the form container to a new position
+      formContainer.style.position = 'absolute';
+      formContainer.style.top = '50px'; // Adjust this value based on your preference
+
+      // Change button position
+      var newPosition = Math.floor(Math.random() * 300) + 50; // Random position within a range
+      button.style.position = 'absolute';
+      button.style.top = newPosition + 'px';
+      button.style.left = newPosition + 'px';
+    }
+
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+</head>
+<body>
+    <nav
+      class="navbar fixed-top navbar-expand-lg bg-body-white border border-dark-subtle border border-danger"
+      style="background-color: #ffffff;"
+    >
+      <div class="container">
+        <img
+          class="img-fluid nav-contanier padding"
+          src="https://mymovingjourney.com/assets/img/MMJ-Logo-Remake-04.png"
+          alt="Logo"
+          width="80"
+          height="80"
+          class="d-inline-block align-text-top"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" style="color: black;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-lg-0 ">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                style="color: #1f3468"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown" onmouseleave="closeDropdown()">
+              <a
+                  class="nav-link active "
+                  style="color: #1f3468;text-wrap: nowrap;"
+                  href="Moversusa.html"
+                 
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  onmouseover="openDropdown()"
+              >
+                  Movers in USA
+              </a>
+              <ul class="dropdown-menu" style="color: #1f3468">
+                  <li><a class="dropdown-item" href="./Moversroute.html">Movers by Route</a></li>
+                  <li><a class="dropdown-item" href="./LocalMover.html">Local Movers</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Long Distance Movers</a></li>
+              </ul>
+          </li>
+          
+          
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./Blogs.html"
+                style="color: #1f3468;"
+                >Blogs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+               href="./Quote.html"
+                class="nav-link active"
+                aria-disabled="true"
+                style="
+                  color: #1f3468;
+                  text-wrap: nowrap;
+                "
+                >Get Quote</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+              href="./About.html"
+                class="nav-link active"
+                style="color: #1f3468; text-wrap: nowrap; padding: 10xp"
+                aria-disabled="true"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./Login.html"
+                class="nav-link active"
+                style="color: #1f3468"
+                aria-disabled="true"
+                >Login</a
+              >
+            </li>
+            <a href="./Button.html">
+              <button href="./Button.html" class="rounded" id="register-btn" type="button">
+                <span style="font-weight: 500;">Add Business</span>
+              </button>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="row container-md m-auto mb-3 pb-2 pt-5">
+        <h1 class="text-center my-1 mb-5 pt-5" style="color: #1f3468; font-weight: 700;">Top <span style="   border-bottom: 220px solid #1f3468;
+          padding-bottom: 3px; " class="link-offset-3 border-bottom border-3">Moving State In</span> USA</h1>
+        <div class="grid-container">
+          <div class="grid-item rounded">
+              <div class="card-cover"></div>
+              <div class="img-wrapper">
+                <img class="img-fluid" src="https://mymovingjourney.com/state-movers/florida.webp" alt="FloridA">
+                <h3>Florida</h3>
+              </div>
+            </div>
+          <div class="grid-item rounded">
+              <div class="card-cover"></div>
+              <div class="img-wrapper">
+                <img class="img-fluid" src="https://mymovingjourney.com/state-movers/california.webp" alt="FloridA">
+                <h3>California</h3>
+              </div>
+            </div>
+          <div class="grid-item rounded">
+              <div class="card-cover"></div>
+              <div class="img-wrapper">
+                <img class="img-fluid" src="https://mymovingjourney.com/state-movers/illinois.webp" alt="FloridA">
+                <h3>illinois</h3>
+              </div>
+            </div>
+          <div class="grid-item rounded">
+              <div class="card-cover"></div>
+              <div class="img-wrapper">
+                <img class="img-fluid" src="https://mymovingjourney.com/state-movers/texas.webp" alt="FloridA">
+                <h3>Texas</h3>
+              </div>
+            </div>
+          <div class="grid-item rounded">
+              <div class="card-cover"></div>
+              <div class="img-wrapper">
+                <img class="img-fluid" src="https://mymovingjourney.com/state-movers/new-york.webp" alt="FloridA">
+                <h3>New-york</h3>
+              </div>
+            </div>
+          <div class="grid-item rounded">
+              <div class="card-cover"></div>
+              <div class="img-wrapper">
+                <img class="img-fluid" src="https://mymovingjourney.com/state-movers/new-jersey.webp" alt="FloridA">
+                <h3>New-jersey</h3>
+              </div>
+            </div>
+          <div class="grid-item rounded">
+              <div class="card-cover"></div>
+              <div class="img-wrapper">
+                <img class="img-fluid" src="https://mymovingjourney.com/state-movers/north-carolina.webp" alt="FloridA">
+                <h3>North-carolina</h3>
+              </div>
+            </div>
+          <div class="grid-item rounded">
+              <div class="card-cover"></div>
+              <div class="img-wrapper">
+                <img class="img-fluid"src="https://mymovingjourney.com/state-movers/alabama.webp" alt="FloridA">
+                <h3>Alabama</h3>
+              </div>
+            </div>
+            <div class="grid-item rounded">
+              <div class="card-cover"></div>
+              <div class="img-wrapper">
+                <img class="img-fluid"src="https://mymovingjourney.com/state-movers/arizona.webp" alt="FloridA">
+                <h3>Arizona</h3>
+              </div>
+            </div>
+            <div class="grid-item rounded">
+              <div class="card-cover"></div>
+              <div class="img-wrapper">
+                <img class="img-fluid"src="https://mymovingjourney.com/state-movers/colorado.webp" alt="FloridA">
+                <h3>Colorado</h3>
+              </div>
+            </div>
+            <div class="grid-item rounded">
+              <div class="card-cover"></div>
+              <div class="img-wrapper">
+                <img class="img-fluid"src="https://mymovingjourney.com/state-movers/indiana.webp" alt="FloridA">
+                <h3>Indiana</h3>
+              </div>
+            </div>
+            <div class="grid-item rounded">
+              <div class="card-cover"></div>
+              <div class="img-wrapper">
+                <img class="img-fluid"src="https://mymovingjourney.com/state-movers/georgia.webp" alt="FloridA">
+                <h3>Georgia</h3>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <hr class="border border-dark border-1 opacity-20"/>
+      <!-- Footer -->
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-6 text-start ">
+            <h2><a class="fs-3" style="color: #1f3468;" href="">Movers</a></h2>
+            <div>Movers In USA</div>
+            <div>Long Distance Movers</div>
+            <div>Local Movers</div>
+            <div>Movers By Route</div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 col-6 col-sm-6 text-start">
+            <a class="fs-3" href="" style="color: #1f3468;">Links</a>
+            <div>Home</div>
+            <div>About us</div>
+            <div>Moverss</div>
+            <div>Blogs</div>
+            <div>Contact us</div>
+            <div>Write a Review</div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-start">
+            <a class="fs-3" href="" style="color: #1f3468;">Business</a>
+            <div>Company Login</div>
+            <div>Registr your Company</div>
+            <div>Site Map</div>
+            <div>Get Quote</div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <a class="fs-3" href="" style="color: #1f3468;">Search Companie</a></br>
+            <input type="text" name="Search" placeholder="Search" style="padding: 5px; padding-inline: 10px; margin-top: 10px; ">
+            <h2 style="margin-top: 10px;">Email</h2>
+            <a
+            
+            >contact@mymovingjourney.com</a>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-between ">
+         <div class="col-auto align-self-start ">
+           <img src="https://mymovingjourney.com/assets/img/MMJ-Logo-Remake-04.png" class="img-fluid footer-img" height="200px"width="200px" >
+         </div>
+         <div class="col-lg-4 col-md-8 col-sm-12 d-flex justify-content-center align-self-end" >
+           <div class="p-2 icon-zoom"><i style="font-size: xx-large; color: #1f3468;" class="bi bi-facebook"></i></div>
+           <div class="p-2 icon-zoom"><i style="font-size: xx-large; color: #1f3468" class="bi bi-linkedin"></i></div>
+           <div class="p-2 icon-zoom"><i style="font-size: xx-large; color: #1f3468" class="bi bi-twitter"></i></div>
+           <div class="p-2 icon-zoom"><i style="font-size: xx-large; color: #1f3468" class="bi bi-pinterest"></i></div>
+           <div class="p-2 icon-zoom" ><i style="font-size: xx-large; color: #1f3468" class="bi bi-people-fill"  ></i></div>
+         </div>
+         
+        </div>
+       </div>
+   
+        <div class="container-lg">
+         <hr>
+        </div>
+        <div class="go-top active" id="goTopButton">
+         <i  class="bi bi-arrow-up-circle-fill" style="font-size: xx-large; color: #1f3468;"></i>                                        
+       </div>
+       
+       
+       <div class="container-lg d-flex footer-copy flex-wrap justify-content-between mb-2" style="color: #1f3468;">
+         <div class="col-lg-3 col-md-5 col-12 mb-1 mb-md-0">
+           <h6 class="footer-h6">Copyright 2024 Mymovingjourney.com. All Rights Reserved.</h6>
+         </div>
+         <div class="col-lg-3 col-md-7 col-12">
+           <h6>Privacy Policy | Terms & Services</h6>
+         </div>
+       </div>
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script>
+         function toggleExpand() {
+           console.log("Toggle function called");
+           const extraText = document.querySelectorAll("[data-extra-text]");
+           const seeMoreText = document.querySelectorAll("[data-see-more]");
+       
+           for(let i = 0 ; i < extraText.length; i++){
+             
+             if (extraText[i].style.display === "none" || extraText[i].style.display === "") {
+             // Show the extra text
+             extraText[i].style.display = "inline";
+             seeMoreText[i].textContent = "See Less";
+           } else {
+             // Hide the extra text
+             extraText[i].style.display = "none";
+             seeMoreText[i].textContent = "See More";
+           }
+           }
+   
+   
+           
+         }
+           // JavaScript to handle dropdown behavior
+           $(document).ready(function () {
+               const navItem = $(".nav-item");
+   
+               navItem.mouseover(function () {
+                   const dropdownMenu = $(this).find(".dropdown-menu");
+                   dropdownMenu.css("display", "block");
+               });
+   
+               
+               navItem.mouseleave(function (e) {
+                   const dropdownMenu = $(this).find(".dropdown-menu");
+                   // Check if mouse is leaving the nav item or dropdown menu
+                   if (!$(this).is(e.relatedTarget) && !dropdownMenu.has(e.relatedTarget).length) {
+                       dropdownMenu.css("display", "none");
+                   }
+               });
+     //       
+               // nev hover
+               var dropdownTimer;
+   
+               function openDropdown() {
+                   clearTimeout(dropdownTimer);
+                   var dropdownMenu = $('.nav-item.dropdown .dropdown-menu');
+                   dropdownMenu.addClass('show');
+                   dropdownMenu.attr('aria-expanded', 'true');
+               }
+   
+               function closeDropdown() {
+                   dropdownTimer = setTimeout(function () {
+                       var dropdownMenu = $('.nav-item.dropdown .dropdown-menu');
+                       dropdownMenu.removeClass('show');
+                       dropdownMenu.attr('aria-expanded', 'false');
+                   }, 500); // Delay in milliseconds before closing the dropdown
+               }
+   
+               // Show or hide the go-top button based on scroll position
+               $(window).scroll(function () {
+                   if ($(this).scrollTop() > 100) {
+                       $('#goTopButton').addClass('active');
+                   } else {
+                       $('#goTopButton').removeClass('active');
+                   }
+               });
+   
+               // Smooth scroll to top when the button is clicked
+               $('#goTopButton').click(function () {
+                   $('html, body').animate({ scrollTop: 0 }, 800);
+                   return false; // Prevent default link behavior
+               });
+           });
+       </script>
+   
+       <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+         crossorigin="anonymous"
+       ></script>
+</body>
+</html>
